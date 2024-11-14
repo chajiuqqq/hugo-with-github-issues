@@ -51,7 +51,7 @@ jobs:
           git config --local user.email "skyfe79@gmail.com"
           git config --local user.name "sungcheol kim"
           git add .
-          git commit -m "Add Posts"
+          git commit -m "Add Posts" || echo "nothing to commit"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
